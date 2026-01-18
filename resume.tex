@@ -15,7 +15,7 @@
 \usepackage{enumitem}
 \usepackage[pdftex]{hyperref}
 \usepackage{fancyhdr}
-
+\usepackage{fontawesome5}
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -36,7 +36,7 @@
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-% Sections formatting
+% Section formatting
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
@@ -69,112 +69,125 @@
 %-------------------------------------------------------------------
 %%%%%%%%%%%%%%%%%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 \begin{document}
 
 %----------HEADING-----------------
-\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{https://github.com/piusdan}{\Large Pius Dan Nyongesa}} & Email : \href{mailto:npiusdan@gmail.com}{npiusdan@gmail.com}\\
-  \href{https://github.com/piusdan}{github.com/piusdan} & Mobile : +254-703554404 \\
-  \href{}{Nairobi, KE} & \href{https://www.linkedin.com/in/piusdannyongesa/}{linkedin.com/in/piusdannyongesa} \\
-\end{tabular*}
+\begin{center}
+  \textbf{\href{https://github.com/piusdan}{\Huge Pius Dan Nyongesa}} \\[4pt]
+  \textbf{\large Senior Backend Engineer / Platform Engineer} \\[8pt]
+  \small
+  \faMapMarker\ Nairobi, Kenya \quad
+  \faEnvelope\ \href{mailto:npiusdan@gmail.com}{npiusdan@gmail.com} \quad
+  \faPhone\ +254 703 554 404 \\[2pt]
+  \faGithub\ \href{https://github.com/piusdan}{github.com/piusdan} \quad
+  \faLinkedin\ \href{https://www.linkedin.com/in/piusdannyongesa/}{linkedin.com/in/piusdannyongesa}
+\end{center}
 
 %-----------Professional Summary-----------------
 \section{Professional Summary}
-A Software Engineer and aspiring technology leader with demonstrated experience in building innovative software products that streamline business operations and reduce time to market. I have a proven track record of working in and also leading high perfoming cross-functional teams to deliver quality software products.
+Senior Backend Engineer with 7+ years of experience designing, building, and operating high-scale, cloud-native backend systems and APIs. Proven track record of owning production microservices, data platforms, CI/CD pipelines, and distributed systems used by millions of users globally. Deep expertise in .NET (C\#), Azure, event-driven architecture, and microservices. Strong focus on performance, reliability, security, and long-term maintainability.
 
-%-----------EDUCATION-----------------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Jomo Kenyatta University of Science and Technology}{2015 - 2021}
-      {BSc. Computer Science}\
-    \resumeSubheading
-      {Starehe Boys Center and School}{2011 - 2014}
-      {High School Diploma - Grade A }\
-  \resumeSubHeadingListEnd
+%-----------Core Backend & Platform Skills-----------------
+\section{Core Backend \& Platform Skills}
+\textbf{Languages:} C\#, .NET, Python, TypeScript \\
+\textbf{Backend:} REST APIs, Microservices, Event-Driven Architecture \\
+\textbf{Databases:} SQL, NoSQL (Cosmos DB), Data Pipelines \\
+\textbf{Cloud \& Infra:} Azure, Kubernetes, Docker, GCP \\
+\textbf{Messaging:} Azure Service Bus, Event Grid, MassTransit \\
+\textbf{DevOps:} CI/CD, Azure DevOps, Git, Infrastructure as Code (Bicep) \\
+\textbf{Observability:} Monitoring, Logging, Tracing, ELK Stack \\
+\textbf{Architecture:} Distributed Systems, Fault Tolerance, Resilience, Scalability
 
 %-----------Experience-----------------
-\section{Experience}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Microsoft}{Nairobi, KE}
-      {Software Engineer}{May 2019 - Present}
-      \resumeItemListStart
-        \resumeItem{Copilot}
-          {Developed Copilot an AI assistant that simplified business workflows and reduced time to generate business artifacts from several weeks to a seconds. Owned integration of the AI models with internal knowledge bases by building processing pipelines to collect and process data from various sources providing the foundational data layer used to ground the AI models.}
-        \resumeItem{Automated Testing Infrastructure}{Developed event driven microservices that managed running of automated tests on thousands of Windows applications daily in order to detect application compatibility issues. Owned microservices to collect and report the test results.}
-        \resumeItem{Azure Migration Tooling}{Developed event driven microservices that enabled azure users globally to determines incompatibilities of Windows applications when migrating from on-premises to Azure. Owned Automation of the Continous Delivery and Intrgaration pipeline of the microservices to multiple azure regions using a ring based deployment mode with automated rollbacks. Developed a self-healing mechanism that detected and resolved service failures automatically.}
-        \resumeItemListEnd
-        \textbf{Relevant Skills: }{Azure, C\#, Powershell, Python, Microservices, Azure Bicep, Azure DevOps, Event Driven Architecture, Artificial Intelligence, Large Language Models, MassTransit, Azure Functions, Azure Cosmos DB, Azure Service Bus, Azure Event Grid} 
-    \resumeSubheading
-      {Loanbee Limited}{Nairobi, KE}
-      {Software Engineer}{Jun 2018 - May 2019}
-      \resumeItemListStart
-        \resumeItem{Loanbee Lending Platform}
-          {Built a lending platform that allowed customers to apply for loans and get instant approval. The platform was built on a microservices architecture and was deployed on a Kubernetes cluster.}
-        \resumeItem{Alternative credit scoring}
-          {Deployed an alternative credit scoring model to detemine  loan eligibility for customers based on their mobile money transactions. The model reduced the default rates by 15\%.}
-        \resumeItem{Observability}
-          {Built and deployed an elasctic search, kibana and logstash stack monitoring system that allowed for realtime monitoring of application running across multiple Virtual machine instances.}
-        \resumeItem{Service Resilience}
-          {Enhanced the security and reliability of servcies running on Kubernetes cluster by deploying an Istio service mesh. This architecture allowed us to use mutual TLS to enhance security. The service mesh also allowed for error handling and retries in case of service failures enabling us build a fault tolerant microsoervices architecture.}         
-      \resumeItemListEnd
-      \textbf{Relevant Skills:}{Python, Kubernetes, Google Cloud, Elixir, Docker, Istio, Elastic Search, Kibana, Logstash, Microservices}
+\section{Professional Experience}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Microsoft}{Nairobi, Kenya}
+    {Software Engineer (Backend \& Platform)}{May 2019 -- Present}
+    \resumeItemListStart
+      \item\small{Designed and built high-scale backend microservices in C\#/.NET supporting AI-powered Copilot workflows across Microsoft business units.}
+      \item\small{Built event-driven data ingestion and processing pipelines integrating LLMs with internal knowledge bases, serving millions of requests per day.}
+      \item\small{Developed and maintained REST APIs and backend orchestration services for automation and data processing.}
+      \item\small{Owned backend architecture for automated testing infrastructure running thousands of Windows application compatibility tests daily.}
+      \item\small{Built self-healing distributed systems with automated failure detection, rollback, and recovery.}
+      \item\small{Designed ring-based CI/CD deployments across multiple Azure regions with zero-downtime releases.}
+      \item\small{Implemented system observability, monitoring, and alerting to ensure high availability and performance.}
+      \item\small{Led architecture discussions, technical design reviews, and mentored junior engineers.}
+    \resumeItemListEnd
+    \textbf{Tech Stack:} C\#, .NET, Azure Functions, Service Bus, Event Grid, Cosmos DB, MassTransit, Azure DevOps, Bicep
 
-    \resumeSubheading
-      {AfrikasTalking LTD}{Nairobi, KE}
-      {Software Developer}{Apr 2017 - Jun 2018}
-      \resumeItemListStart
-        \resumeItem{Dodore Training Platform}
-          {Consulted for Dodore Agriculture, a startup based in Nairobi to build a SMS based platform that allowed the company to rollout educational campaigns to over 10,000 farmers on their portfolio.}
-        \resumeItem{Tuwajibike Mashinani Public Participation Portal}
-          {Consulted for Mbaika Connect to build a public participation portal that allowed citizens to give feedback on various issues directly to the leaders using a USSD application.}
-        \resumeItem{Cash value Solutions Event Ticketing System}
-          {Consulted for Cash Value Sulutions to build an event ticketing system that allowed event organizers to sell tickets to their events through ussd. The system also had a billing module to allow customers purchase airtime and pay utility bills.}
-        \resumeItem{Software Developer Intern}
-          {Developed product demos to Guide developers when integrating Africa's Talking Voice, USSD, Airtime and SMS APIs.}
-      \resumeItemListEnd
-      \textbf{Relevant Skills:}{Python, Flask, Django, USSD, SMS, Voice, Airtime, API Integration, Microservices}
-  \resumeSubHeadingListEnd
+  \resumeSubheading
+    {Loanbee Limited}{Nairobi, Kenya}
+    {Software Engineer (Backend)}{Jun 2018 -- May 2019}
+    \resumeItemListStart
+      \item\small{Built a cloud-native fintech lending platform using microservices architecture deployed on Kubernetes.}
+      \item\small{Designed backend services for loan origination, credit scoring, and payments processing.}
+      \item\small{Integrated mobile money transaction data into alternative credit scoring models, reducing default rates by 15\%.}
+      \item\small{Built real-time observability platform using Elasticsearch, Kibana, and Logstash.}
+      \item\small{Implemented service resilience using Istio service mesh with mTLS, retries, and fault tolerance.}
+    \resumeItemListEnd
+    \textbf{Tech Stack:} Python, Kubernetes, Docker, Istio, GCP, ELK Stack, Microservices
 
-%-----------PUBLICATIONS-----------------
-\section{Publications and Presentations}
-  \resumeSubHeadingListStart 
-    \resumeSubItem{USSD Tutorial}
-      {Step by step Tutorial to guide learners in developing USSD applications. \href{https://github.com/piusdan/USSD-Python-Demo}{https://github.com/piusdan/USSD-Python-Demo}}
-    \resumeSubItem{Kubernetes Security Publication}
-      {Wrote a publication on how to secure Kubernetes Clusters on Cloud. \href{https://piusdan.medium.com/kubernetes-security-faf59ac121e1}{https://piusdan.medium.com/kubernetes-security-faf59ac121e1}}
-  	\resumeSubItem{Speaker at GDG Fest Nairobi}
-      {GDG is a commmunity of google cloud experts in Africa. I presented my learnings on reliabily running a Kubernetes cluster on cloud.}
-  	\resumeSubItem{Speaker at Pycon}
-      {Pycon is the largest conference on python held annually accross all geogrphic zones. I presented on using GRPC to build fast and reliable microservices.}
-  \resumeSubHeadingListEnd
+  \resumeSubheading
+    {Africa's Talking}{Nairobi, Kenya}
+    {Software Developer}{Apr 2017 -- Jun 2018}
+    \resumeItemListStart
+      \item\small{Built backend APIs for USSD, SMS, billing, and event ticketing platforms.}
+      \item\small{Developed high-volume messaging systems serving 10,000+ users.}
+      \item\small{Integrated telecom APIs for payments, airtime, and messaging.}
+      \item\small{Built public participation and civic engagement platforms using USSD and SMS.}
+    \resumeItemListEnd
+    \textbf{Tech Stack:} Python, Flask, Django, USSD, SMS, API Integrations
+\resumeSubHeadingListEnd
 
-%-----------Voluntary Experience-----------------
-\section{Voluntary Experience}
-  \resumeSubHeadingListStart  
-    \resumeSubItem{Founder - Silicon Blaze}
-      {During my first and second year of campus, I founded Silicon blaze, an organization aimed making computer science education accessible to economically disadvantaged youth in Kenya. I organized a team of 20 volunteers to teach computer sceince basics to over 1000 youths across Kenyan high schools. These youths were all able to build a basic web page by the end of the course. \href{https://siliconblazeblog.wordpress.com/}{https://siliconblazeblog.wordpress.com}}
-  \resumeSubHeadingListEnd
+%-----------Selected Systems & Products-----------------
+\section{Selected Systems \& Products}
+\resumeSubHeadingListStart
+  \resumeSubItem{Copilot AI Platform (Microsoft)}{Backend data ingestion and orchestration layer for enterprise AI workflows.}
+  \resumeSubItem{Loanbee Lending Platform}{Fintech credit and payments backend serving thousands of borrowers.}
+  \resumeSubItem{RoboPal AI}{WhatsApp-based AI education platform serving 10,000+ learners across Africa. \href{https://robopal.co}{robopal.co}}
+  \resumeSubItem{ChangaChanga}{Multi-channel fintech payments platform integrated with Visa 3D and core banking systems. \href{https://changachanga.co.ke}{changachanga.co.ke}}
+  \resumeSubItem{Kapu WhatsApp Shopping}{WhatsApp commerce backend driving 10\% weekly GMV growth. \href{https://kapuafrica.com}{kapuafrica.com}}
+\resumeSubHeadingListEnd
 
-%-----------PROJECTS-----------------
-\section{Projects}
-  \resumeSubHeadingListStart  	
-	  \resumeSubItem {Robopal AI}
-	  {Built a WhatsApp based bot that uses LLMs to democratize access to education for over 10,000 learners accross Africa. Using both LLMs and innovative pricing model I was able to allow learners access educational materials for a fraction of the tution fees \href{https://robopal.co}{https://robopal.co}}
-	\resumeSubItem {ChangaChanga}
-	{Led a team of 5 to design and build a platform Web Application (React Js, Python + Fast API), IOS Application and Android Application (Flutter) and CRM portal (React Js) to simplify making financial transactions. The system used Visa 3D technology and was fully integrated into the core banking of a major Kenyan bank. \href{https://changachanga.co.ke}{www.changachanga.co.ke}}
-\resumeSubItem{Kapu WhatsApp Shopping Cart}
-{Consulted for Kapu an online retailer in Africa to build the first WhatsApp based shopping Experience in Africa using Typescript and Node Js. The WhatsApp based shoping experience led to a 10\% week on week increase on the Gross Margin Value and saw new sign ups rise by 5\%.\href{https://kapuafrica.com}{kapuafrica.com}}
-    \resumeSubItem{USSD SDK}
-      {Open sourced an SDK to build reliable and fast USSD applications. The project has 68 stars on github and over 60 developers continue to use the project to build USSD applications \href{https://github.com/piusdan/flask-ussd-flow}{https://github.com/piusdan/flask-ussd-flow}}
-  \resumeSubHeadingListEnd
+%-----------Backend Architecture & System Design-----------------
+\section{Backend Architecture \& System Design}
+\resumeSubHeadingListStart
+  \resumeSubItem{Event Processing}{Designed distributed backend systems processing millions of events per day.}
+  \resumeSubItem{Fault Tolerance}{Built fault-tolerant microservices using retries, circuit breakers, and automated recovery.}
+  \resumeSubItem{Zero-Downtime Deployments}{Implemented zero-downtime deployments with ring-based rollout strategies.}
+  \resumeSubItem{Event-Driven Pipelines}{Designed scalable event-driven pipelines for AI and fintech platforms.}
+  \resumeSubItem{Security}{Built secure, cloud-native systems with identity, encryption, and service-to-service authentication.}
+\resumeSubHeadingListEnd
 
-%-----------HOBBIES-----------------
-\section{Skills \& Certifications}
-      \resumeItemListStart
-        \resumeItem{Languages} {English, Kiswahili}
-        \resumeItem{Hobbies} {Running, Golfing, Hiking}
-      \resumeItemListEnd
+%-----------Publications & Speaking-----------------
+\section{Publications \& Speaking}
+\resumeSubHeadingListStart 
+  \resumeSubItem{Kubernetes Security Publication}{Securing Kubernetes Clusters in the Cloud. \href{https://piusdan.medium.com/kubernetes-security-faf59ac121e1}{medium.com}}
+  \resumeSubItem{Speaker — GDG Nairobi}{Running reliable Kubernetes platforms at scale.}
+  \resumeSubItem{Speaker — PyCon}{Building fast microservices using gRPC.}
+  \resumeSubItem{USSD Tutorial}{Open-source USSD development guide. \href{https://github.com/piusdan/USSD-Python-Demo}{github.com/piusdan/USSD-Python-Demo}}
+\resumeSubHeadingListEnd
+
+%-----------Education-----------------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Jomo Kenyatta University of Science and Technology}{2015 -- 2021}
+    {Bachelor of Science in Computer Science}{}
+\resumeSubHeadingListEnd
+
+%-----------Leadership & Community-----------------
+\section{Leadership \& Community}
+\resumeSubHeadingListStart  
+  \resumeSubItem{Founder — Silicon Blaze}{
+    Founded a nonprofit teaching computer science to economically disadvantaged youth. Led 20 volunteers and trained 1,000+ students across Kenyan high schools.
+    \href{https://siliconblazeblog.wordpress.com/}{siliconblazeblog.wordpress.com}
+  }
+\resumeSubHeadingListEnd
+
+%-----------Languages-----------------
+\section{Languages}
+English, Kiswahili
+
 \end{document}
